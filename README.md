@@ -1,6 +1,6 @@
 # AHT20 RUST DEMO
 
-This repo is just a demo for the [sensor_lib_aht20](https://github.com/jake-g00dwin/sensor_lib_aht20) library that is targeted 
+This repo is just a demo for the [sensor_lib_aht20](https://github.com/Personal-Data-Acquisition/sensor_lib_aht20) library that is targeted 
 for the stm32f103c8 in the demo.
 
 ## Building
