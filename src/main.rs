@@ -1,4 +1,3 @@
-//#![cfg_attr(not(test), no_std)]
 #![no_std]
 #![no_main]
 
@@ -11,7 +10,6 @@ use embedded_alloc::Heap;
 #[global_allocator]
 static HEAP: Heap = Heap::empty();
 
-//use cortex_m::delay::Delay;
 
 use stm32f1xx_hal::{
     i2c::{BlockingI2c, Mode},
