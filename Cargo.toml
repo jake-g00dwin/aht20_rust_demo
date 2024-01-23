@@ -1,0 +1,23 @@
+[package]
+name = "aht20_sensor_module"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+embedded-hal = "0.2.7"
+nb = "1"
+cortex-m = { version = "0.7.6", features = ["critical-section-single-core"]}
+cortex-m-rt = "0.7.1"
+# Panic behaviour, see https://crates.io/keywords/panic-impl for alternatives
+panic-halt = "0.2.0"
+
+embedded-alloc = "0.5.1"
+rtt-target = "0.5.0"
+sensor_lib_aht20 = {git="https://github.com/jake-g00dwin/sensor_lib_aht20.git", branch = "hal2.7"}
+
+
+[dependencies.stm32f1xx-hal]
+version = "0.10.0"
+features = ["rt", "stm32f103", "medium"]
